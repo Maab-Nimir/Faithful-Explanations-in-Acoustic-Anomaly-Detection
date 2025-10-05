@@ -25,7 +25,7 @@ def unpatchify(patches, positions, output_shape):
         output[y:y+h, x:x+w] = patch
     return output
 
-### -------- MASKING -------- ###
+# -------- MASKING --------
 
 def generate_random_patch_mask(num_patches, mask_ratio=0.75):
     num_mask = int(mask_ratio * num_patches)
