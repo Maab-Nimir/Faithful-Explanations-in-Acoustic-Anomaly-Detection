@@ -1,0 +1,11 @@
+torch
+torchaudio
+scikit-learn
+poutyne
+matplotlib
+joblib
+numpy
+pandas
+librosa
+captum
+tqdm

@@ -1,0 +1,107 @@
+Recording wav File,Spectrogram File Name,Spectrogram Number,Spectrogram Time Range,Board (Anomaly) Type,"Time Anomaly Labels
+[(t1,t2), ...,etc]",Labels in Spectrogram
+MPD_19-12-04_0848_00006.wav,MPD_19-12-04_0848_00006_1.pt,1,0-10 seconds,Uneven_thick_wood,"[(1,2)]","[(40,80)]"
+MPD_19-12-04_0848_00006.wav,MPD_19-12-04_0848_00006_2.pt,2,10-20 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_0914_00032.wav,MPD_19-12-04_0914_00032_4.pt,4,30-40 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_0914_00032.wav,MPD_19-12-04_0914_00032_5.pt,5,40-50 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_0914_00032.wav,MPD_19-12-04_0914_00032_6.pt,6,50-60 seconds,Uneven_thick_wood,"[(53,54)]","[(120,160)]"
+MPD_19-12-04_1037_00115.wav,MPD_19-12-04_1037_00115_6.pt,6,50-60 seconds,broken_board,-,-
+MPD_19-12-04_1111_00149.wav,MPD_19-12-04_1111_00149_2.pt,2,10-20 seconds,Uneven_thick_wood,"[(11,16)]","[(40,240)]"
+MPD_19-12-04_1111_00149.wav,MPD_19-12-04_1111_00149_3.pt,3,20-30 seconds,Uneven_thick_wood,"[(21,22), (27,29)]","[(40,80), (280,360)]"
+MPD_19-12-04_1111_00149.wav,MPD_19-12-04_1111_00149_4.pt,4,30-40 seconds,Uneven_thick_wood,"[(30,31), (38,39)]","[(0,40), (320,360)]"
+MPD_19-12-04_1111_00149.wav,MPD_19-12-04_1111_00149_5.pt,5,40-50 seconds,Uneven_thick_wood,"[(43,47)]","[(120,280)]"
+MPD_19-12-04_1111_00149.wav,MPD_19-12-04_1111_00149_6.pt,6,50-60 seconds,Uneven_thick_wood,"[(56,58)]","[(240,320)]"
+MPD_19-12-04_1112_00150.wav,MPD_19-12-04_1112_00150_1.pt,1,0-10 seconds,Uneven_thick_wood,"[(4,7)]","[(160,280)]"
+MPD_19-12-04_1112_00150.wav,MPD_19-12-04_1112_00150_2.pt,2,10-20 seconds,Uneven_thick_wood,"[(13,16)]","[(120,240)]"
+MPD_19-12-04_1112_00150.wav,MPD_19-12-04_1112_00150_3.pt,3,20-30 seconds,Uneven_thick_wood,"[(22,23), (29,30)]","[(80,120), (360,399)]"
+MPD_19-12-04_1112_00150.wav,MPD_19-12-04_1112_00150_4.pt,4,30-40 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1112_00150.wav,MPD_19-12-04_1112_00150_5.pt,5,40-50 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1112_00150.wav,MPD_19-12-04_1112_00150_6.pt,6,50-60 seconds,Uneven_thick_wood,"[(55,57), (58,59)]","[(200,280), (320,360)]"
+MPD_19-12-04_1113_00151.wav,MPD_19-12-04_1113_00151_1.pt,1,0-10 seconds,Uneven_thick_wood,"[(5,6)]","[(200, 240)]"
+MPD_19-12-04_1113_00151.wav,MPD_19-12-04_1113_00151_2.pt,2,10-20 seconds,Uneven_thick_wood,"[(15,19)]","[(200,360)]"
+MPD_19-12-04_1113_00151.wav,MPD_19-12-04_1113_00151_3.pt,3,20-30 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1113_00151.wav,MPD_19-12-04_1113_00151_4.pt,4,30-40 seconds,Uneven_thick_wood,"[(36,37)]","[(240,280)]"
+MPD_19-12-04_1113_00151.wav,MPD_19-12-04_1113_00151_5.pt,5,40-50 seconds,Uneven_thick_wood,"[(41,44), (47,50)]","[(40,160), (280,399)]"
+MPD_19-12-04_1113_00151.wav,MPD_19-12-04_1113_00151_6.pt,6,50-60 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1114_00152.wav,MPD_19-12-04_1114_00152_1.pt,1,0-10 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1114_00152.wav,MPD_19-12-04_1114_00152_2.pt,2,10-20 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1114_00152.wav,MPD_19-12-04_1114_00152_3.pt,3,20-30 seconds,Uneven_thick_wood,"[(20,23), (26,28)]","[(0,120), (240,320)]"
+MPD_19-12-04_1114_00152.wav,MPD_19-12-04_1114_00152_4.pt,4,30-40 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1114_00152.wav,MPD_19-12-04_1114_00152_5.pt,5,40-50 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1114_00152.wav,MPD_19-12-04_1114_00152_6.pt,6,50-60 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1115_00153.wav,MPD_19-12-04_1115_00153_1.pt,1,0-10 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1115_00153.wav,MPD_19-12-04_1115_00153_2.pt,2,10-20 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1115_00153.wav,MPD_19-12-04_1115_00153_3.pt,3,20-30 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1115_00153.wav,MPD_19-12-04_1115_00153_4.pt,4,30-40 seconds,Uneven_thick_wood,"[(36,40)]","[(240, 399)]"
+MPD_19-12-04_1115_00153.wav,MPD_19-12-04_1115_00153_5.pt,5,40-50 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1115_00153.wav,MPD_19-12-04_1115_00153_6.pt,6,50-60 seconds,Uneven_thick_wood,"[(51,55)]","[(40,200)]"
+MPD_19-12-04_1116_00154.wav,MPD_19-12-04_1116_00154_2.pt,2,10-20 seconds,Uneven_thick_wood,"[(13,14), (17,19)]","[(120,160), (280,360)]"
+MPD_19-12-04_1117_00155.wav,MPD_19-12-04_1117_00155_1.pt,1,0-10 seconds,Uneven_thick_wood,"[(2,3)]","[(80,120)]"
+MPD_19-12-04_1117_00155.wav,MPD_19-12-04_1117_00155_2.pt,2,10-20 seconds,Uneven_thick_wood,"[(19,20)]","[(360,399)]"
+MPD_19-12-04_1117_00155.wav,MPD_19-12-04_1117_00155_3.pt,3,20-30 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1117_00155.wav,MPD_19-12-04_1117_00155_4.pt,4,30-40 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1117_00155.wav,MPD_19-12-04_1117_00155_5.pt,5,40-50 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1117_00155.wav,MPD_19-12-04_1117_00155_6.pt,6,50-60 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1118_00156.wav,MPD_19-12-04_1118_00156_1.pt,1,0-10 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1118_00156.wav,MPD_19-12-04_1118_00156_2.pt,2,10-20 seconds,Uneven_thick_wood,"[(17,20)]","[(280,399)]"
+MPD_19-12-04_1118_00156.wav,MPD_19-12-04_1118_00156_3.pt,3,20-30 seconds,Uneven_thick_wood,"[(22,23), (27,28), (29,30)]","[(80,120), (280,320), (360,399)]"
+MPD_19-12-04_1118_00156.wav,MPD_19-12-04_1118_00156_4.pt,4,30-40 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1118_00156.wav,MPD_19-12-04_1118_00156_5.pt,5,40-50 seconds,Uneven_thick_wood,"[(43,44)]","[(120,160)]"
+MPD_19-12-04_1118_00156.wav,MPD_19-12-04_1118_00156_6.pt,6,50-60 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1119_00157.wav,MPD_19-12-04_1119_00157_1.pt,1,0-10 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1119_00157.wav,MPD_19-12-04_1119_00157_2.pt,2,10-20 seconds,Uneven_thick_wood,"[(15,17), (18,19)]","[(200,280), (320,360)]"
+MPD_19-12-04_1119_00157.wav,MPD_19-12-04_1119_00157_3.pt,3,20-30 seconds,Uneven_thick_wood,"[(20,23), (24,27), (29,30)]","[(0,120), (160,280), (360,399)]"
+MPD_19-12-04_1119_00157.wav,MPD_19-12-04_1119_00157_4.pt,4,30-40 seconds,Uneven_thick_wood,"[(34,35), (37,39)]","[(160,200), (280,360)]"
+MPD_19-12-04_1119_00157.wav,MPD_19-12-04_1119_00157_5.pt,5,40-50 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1119_00157.wav,MPD_19-12-04_1119_00157_6.pt,6,50-60 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1120_00158.wav,MPD_19-12-04_1120_00158_2.pt,2,10-20 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1120_00158.wav,MPD_19-12-04_1120_00158_3.pt,3,20-30 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1120_00158.wav,MPD_19-12-04_1120_00158_4.pt,4,30-40 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1120_00158.wav,MPD_19-12-04_1120_00158_5.pt,5,40-50 seconds,Uneven_thick_wood,"[(44,46), (47,48)]","[(160,240), (280,320)]"
+MPD_19-12-04_1120_00158.wav,MPD_19-12-04_1120_00158_6.pt,6,50-60 seconds,Uneven_thick_wood,"[(50,51), (52,54)]","[(0,40), (80,160)]"
+MPD_19-12-04_1121_00159.wav,MPD_19-12-04_1121_00159_1.pt,1,0-10 seconds,Uneven_thick_wood,"[(4,5)]","[(160,200)]"
+MPD_19-12-04_1121_00159.wav,MPD_19-12-04_1121_00159_3.pt,3,20-30 seconds,Uneven_thick_wood,"[(27,30)]","[(280,399)]"
+MPD_19-12-04_1121_00159.wav,MPD_19-12-04_1121_00159_4.pt,4,30-40 seconds,Uneven_thick_wood,"[(30,32), (38,40)]","[(0,80), (320,399)]"
+MPD_19-12-04_1121_00159.wav,MPD_19-12-04_1121_00159_5.pt,5,40-50 seconds,Uneven_thick_wood,"[(43,44), (45,47)]","[(120,160), (200,280)]"
+MPD_19-12-04_1121_00159.wav,MPD_19-12-04_1121_00159_6.pt,6,50-60 seconds,Uneven_thick_wood,"[(50,52)]","[(0,80)]"
+MPD_19-12-04_1123_00161.wav,MPD_19-12-04_1123_00161_4.pt,4,30-40 seconds,board_stuck,-,-
+MPD_19-12-04_1123_00161.wav,MPD_19-12-04_1123_00161_5.pt,5,40-50 seconds,board_stuck,-,-
+MPD_19-12-04_1123_00161.wav,MPD_19-12-04_1123_00161_6.pt,6,50-60 seconds,board_stuck,"[(50,51), (55,58)]","[(0,40), (200,320)]"
+MPD_19-12-04_1124_00162.wav,MPD_19-12-04_1124_00162_1.pt,1,0-10 seconds,board_stuck,-,-
+MPD_19-12-04_1124_00162.wav,MPD_19-12-04_1124_00162_2.pt,2,10-20 seconds,board_stuck,"[(12,20)]","[(80,399)]"
+MPD_19-12-04_1124_00162.wav,MPD_19-12-04_1124_00162_3.pt,3,20-30 seconds,board_stuck,"[(20,29)]","[(0,360)]"
+MPD_19-12-04_1124_00162.wav,MPD_19-12-04_1124_00162_4.pt,4,30-40 seconds,board_stuck,"[(36,40)]","[(240,399)]"
+MPD_19-12-04_1124_00162.wav,MPD_19-12-04_1124_00162_5.pt,5,40-50 seconds,board_stuck,-,-
+MPD_19-12-04_1124_00162.wav,MPD_19-12-04_1124_00162_6.pt,6,50-60 seconds,board_stuck,-,-
+MPD_19-12-04_1125_00163.wav,MPD_19-12-04_1125_00163_1.pt,1,0-10 seconds,board_stuck,-,-
+MPD_19-12-04_1125_00163.wav,MPD_19-12-04_1125_00163_2.pt,2,10-20 seconds,board_stuck,-,-
+MPD_19-12-04_1125_00163.wav,MPD_19-12-04_1125_00163_3.pt,3,20-30 seconds,board_stuck,-,-
+MPD_19-12-04_1125_00163.wav,MPD_19-12-04_1125_00163_4.pt,4,30-40 seconds,board_stuck,-,-
+MPD_19-12-04_1125_00163.wav,MPD_19-12-04_1125_00163_5.pt,5,40-50 seconds,board_stuck,-,-
+MPD_19-12-04_1125_00163.wav,MPD_19-12-04_1125_00163_6.pt,6,50-60 seconds,board_stuck,-,-
+MPD_19-12-04_1133_00171.wav,MPD_19-12-04_1133_00171_1.pt,1,0-10 seconds,board_stuck,-,-
+MPD_19-12-04_1133_00171.wav,MPD_19-12-04_1133_00171_2.pt,2,10-20 seconds,board_stuck,-,-
+MPD_19-12-04_1133_00171.wav,MPD_19-12-04_1133_00171_3.pt,3,20-30 seconds,board_stuck,-,-
+MPD_19-12-04_1133_00171.wav,MPD_19-12-04_1133_00171_4.pt,4,30-40 seconds,board_stuck,-,-
+MPD_19-12-04_1133_00171.wav,MPD_19-12-04_1133_00171_5.pt,5,40-50 seconds,board_stuck,-,-
+MPD_19-12-04_1133_00171.wav,MPD_19-12-04_1133_00171_6.pt,6,50-60 seconds,board_stuck,-,-
+MPD_19-12-04_1136_00174.wav,MPD_19-12-04_1136_00174_1.pt,1,0-10 seconds,board_stuck,"[(3,5)]","[(120,200)]"
+MPD_19-12-04_1136_00174.wav,MPD_19-12-04_1136_00174_5.pt,5,40-50 seconds,board_stuck,"[(42,45)]","[(80,200)]"
+MPD_19-12-04_1136_00174.wav,MPD_19-12-04_1136_00174_6.pt,6,50-60 seconds,board_stuck,-,-
+MPD_19-12-04_1519_00397.wav,MPD_19-12-04_1519_00397_6.pt,6,50-60 seconds,board_stuck,"[(57,60)]","[(280,399)]"
+MPD_19-12-04_1520_00398.wav,MPD_19-12-04_1520_00398_1.pt,1,0-10 seconds,board_stuck,-,-
+MPD_19-12-04_1526_00404.wav,MPD_19-12-04_1526_00404_2.pt,2,10-20 seconds,board_stuck,"[(10,14)]","[(0,160)]"
+MPD_19-12-04_1542_00420.wav,MPD_19-12-04_1542_00420_1.pt,1,0-10 seconds,board_stuck,"[(2,6)]","[(80,240)]"
+MPD_19-12-04_1542_00420.wav,MPD_19-12-04_1542_00420_2.pt,2,10-20 seconds,board_stuck,"[(11,20)]","[(40,399)]"
+MPD_19-12-04_1713_00511.wav,MPD_19-12-04_1713_00511_1.pt,1,0-10 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1713_00511.wav,MPD_19-12-04_1713_00511_2.pt,2,10-20 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1713_00511.wav,MPD_19-12-04_1713_00511_3.pt,3,20-30 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1713_00511.wav,MPD_19-12-04_1713_00511_4.pt,4,30-40 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1713_00511.wav,MPD_19-12-04_1713_00511_5.pt,5,40-50 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1713_00511.wav,MPD_19-12-04_1713_00511_6.pt,6,50-60 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1714_00512.wav,MPD_19-12-04_1714_00512_1.pt,1,0-10 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1714_00512.wav,MPD_19-12-04_1714_00512_2.pt,2,10-20 seconds,Uneven_thick_wood,-,-
+MPD_19-12-04_1714_00512.wav,MPD_19-12-04_1714_00512_3.pt,3,20-30 seconds,Uneven_thick_wood,-,-
+MPD_19-12-05_0949_00008.wav,MPD_19-12-05_0949_00008_3.pt,3,20-30 seconds,broken_board,-,-
+MPD_19-12-05_0949_00008.wav,MPD_19-12-05_0949_00008_4.pt,4,30-40 seconds,broken_board,"[(35,40)]","[(200,399)]"
+MPD_19-12-05_0949_00008.wav,MPD_19-12-05_0949_00008_5.pt,5,40-50 seconds,broken_board,"[(44,48)]","[(160,320)]"
