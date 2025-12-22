@@ -12,7 +12,8 @@ The localized annotated anomaly data is available [here](https://docs.google.com
 To demonstrate the applicability of the proposed interpretability framework to a different dataset, we conducted initial experiments on the DCASE 2022 Task 2 benchmark. A transformer-based AE architecture was adapted to DCASE inputs, and both AE and MAE were trained on the development training set for 500 epochs with early stopping (patience = 30), without hyperparameter tuning. Performance can be improved with hyperparameter tuning and additional training data.
 
 Results on the development evaluation set show comparable detection performance across 7 machine types, with best performance on fan machines and lowest on valve. Mean source/target AUCs are 0.513/0.495 (AE) and 0.509/0.463 (MAE).
- - Using frame-based faithfulness (fidelity) and averaging the faithfulness scores at the highest threshold percentiles (98th–99th), MAE achieves slightly higher faithfulness than AE (0.039 vs. 0.038), which indicates MAE provides more reliable explanations than AE even before model optimization.
+
+Using frame-based faithfulness (fidelity) and averaging the faithfulness scores at the highest threshold percentiles (98th–99th), MAE achieves slightly higher faithfulness than AE (0.039 vs. 0.038), which indicates MAE provides more reliable explanations than AE even before model optimization.
 
 ### Autoencoder (AE)
 
