@@ -1,2 +1,7 @@
 
 .ipynb_checkpoints/
+faithfulenv/
+logs/
+trainer/checkpoints/
+trainer/*.pdf
+trainer/*.joblib

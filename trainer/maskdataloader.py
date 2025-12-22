@@ -21,20 +21,19 @@ class CustomDataset(Dataset):
         self.return_directory = return_directory
 
     def __len__(self):
-        return self.size
+        return len(self.files)
         
     def __getitem__(self, idx):
         if self.fixed_masking:
             random.seed(idx)
             np.random.seed(idx)
         else:
-            seed_value = random.randint(1, 3000)
+            seed_value = random.randint(1, 5000)
             random.seed(seed_value)
             np.random.seed(seed_value)
     
         if idx not in self.loaded:
-            content = torch.load(self.files[idx], weights_only=False)
-            self.loaded[idx] = content
+            self.loaded[idx] = torch.load(self.files[idx], weights_only=False)
     
         spectrogram = self.loaded[idx]
     

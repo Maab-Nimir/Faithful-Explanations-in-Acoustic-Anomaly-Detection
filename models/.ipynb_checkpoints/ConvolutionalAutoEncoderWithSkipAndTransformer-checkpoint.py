@@ -4,9 +4,10 @@ from torch import nn
 
 
 class ConvolutionalAutoEncoderWithSkipAndTransformer(nn.Module):
-    def __init__(self, input_size, input_num_chanels):
+    def __init__(self, input_size, input_num_chanels, d_model=500, nhead=10, in_features=50): #, dcase_training=False):
         super(ConvolutionalAutoEncoderWithSkipAndTransformer, self).__init__()
         start_num_channels = 2
+        # self.dcase_training = dcase_training
         # Encoder
         self.conv1 = nn.Conv2d(in_channels=1, out_channels=start_num_channels, kernel_size=3, stride=1,
                                padding=1)
@@ -70,11 +71,11 @@ class ConvolutionalAutoEncoderWithSkipAndTransformer(nn.Module):
         self.batch7 = nn.BatchNorm2d(num_features=start_num_channels * 4)
         self.batch8 = nn.BatchNorm2d(num_features=start_num_channels * 2)
 
-        self.transformer_encode = nn.TransformerEncoder(nn.TransformerEncoderLayer(d_model=500, nhead=10, batch_first=True), num_layers=1)  # nn.MultiheadAttention(500, 10, batch_first=True)
-        self.transformer_decode = nn.TransformerDecoder(nn.TransformerDecoderLayer(d_model=500, nhead=10, batch_first=True), num_layers=1)  # nn.MultiheadAttention(500, 10, batch_first=True)
+        self.transformer_encode = nn.TransformerEncoder(nn.TransformerEncoderLayer(d_model=d_model, nhead=nhead, batch_first=True), num_layers=1)  # nn.MultiheadAttention(500, 10, batch_first=True)
+        self.transformer_decode = nn.TransformerDecoder(nn.TransformerDecoderLayer(d_model=d_model, nhead=nhead, batch_first=True), num_layers=1)  # nn.MultiheadAttention(500, 10, batch_first=True)
 
-        self.weights_skip_encode = nn.Linear(in_features=50, out_features=50)
-        self.weights_skip_decode = nn.Linear(in_features=50, out_features=50)
+        self.weights_skip_encode = nn.Linear(in_features=in_features, out_features=in_features)
+        self.weights_skip_decode = nn.Linear(in_features=in_features, out_features=in_features)
 
         self.input_size = input_size
         self.input_num_chanels = input_num_chanels
@@ -102,19 +103,27 @@ class ConvolutionalAutoEncoderWithSkipAndTransformer(nn.Module):
         skip4 = torch.zeros(h13.shape, device=x.device)
         skip4[:, :h11.shape[1], :, :] = h11
         last = h13
+        # print('h13 ', h13.shape)
+        # if self.dcase_training:
+        last = F.adaptive_avg_pool2d(last, (16, 39)) ###########################
         last_flatten = last.flatten(2, 3)
+        # print('last_flatten ', last_flatten.shape)
         last_attention = self.transformer_encode(last_flatten)
         last = last_attention.reshape(last.shape)
         h14 = nn.MaxPool2d(2)(self.batch4((last + F.leaky_relu(self.weights_skip_encode(h12 + skip4)))))
         return h14, last
 
     def decode(self, z, last_encoder_layer):
+        # print('last_encoder_layer ', last_encoder_layer.shape,last_encoder_layer.flatten(2, 3).shape)
         h1 = F.leaky_relu(self.conv11(z))
         h2 = F.leaky_relu(self.conv12(h1))
         h3 = F.leaky_relu(self.conv13(h2 + h1))
         h4 = F.leaky_relu(self.conv14(h3))
         h5 = self.conv_trans1(self.batch5(h4 + h3 + z))
+        # if self.dcase_training:
+        h5 = F.adaptive_avg_pool2d(h5, last_encoder_layer.shape[2:]) ###########################
         h5_flatten = h5.flatten(2, 3)
+        # print('h5 ', h5.shape, ' h5_flatten ', h5_flatten.shape)
         last_attention = self.transformer_decode(h5_flatten, last_encoder_layer.flatten(2, 3))
         last = last_attention.reshape(h5.shape)
         h6 = F.leaky_relu(self.conv15(last))
