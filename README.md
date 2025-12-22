@@ -8,15 +8,11 @@ To assess explanation quality, we apply a perturbation-based faithfulness metric
 
 The localized annotated anomaly data is available [here](https://docs.google.com/spreadsheets/d/1dcYCwxwJPJapTGzIUeMZsNLjyiTSxe55j4NrVN39BYQ/edit?usp=sharing).
 
-# Usage:
-
- - Install dependencies listed in `requirements.txt`.
- - The notebooks `train-models.ipynb` and `evaluate-models.ipynb` contain the script to train and evaluate different anomaly detection models. The convolutional autoencoder with skip connections and transformer achieves the best baseline performance.
- - In `maskedAE.ipynb`, the best transformer autoencoder model is retrained with masked input regions (MAE training) and compared against the baseline autoencoder using both faithfulness and F-score metrics.
- - The notebook `dcase2022.ipynb` presents initial experiments to evaluate the applicability of the proposed interpretability framework on a different dataset. The anomaly detection models are not optimized and are intended for exploratory analysis; performance can be improved with hyperparameter tuning and additional training data.
- - A transformer-based AE architecture was adapted to DCASE inputs, and both AE and MAE models were trained on the development training set for 500 epochs with early stopping (patience = 30). Results on the development evaluation set show comparable detection performance across machine types, with best performance on fan machines and lowest on valve. Mean source/target AUCs are 0.513/0.495 (AE) and 0.509/0.463 (MAE).
- - Using frame-based faithfulness (fidelity) and averaging the faithfulness scores at the highest threshold percentiles (98th–99th), MAE achieves slightly higher faithfulness than AE (0.039 vs. 0.038), indicating more reliable explanations even before model optimization.
 ## DCASE 2022 Task 2 – Anomaly Detection Results (Preliminary)
+To demonstrate the applicability of the proposed interpretability framework to a different dataset, we conducted initial experiments on the DCASE 2022 Task 2 benchmark. A transformer-based AE architecture was adapted to DCASE inputs, and both AE and MAE were trained on the development training set for 500 epochs with early stopping (patience = 30), without hyperparameter tuning. Performance can be improved with hyperparameter tuning and additional training data.
+
+Results on the development evaluation set show comparable detection performance across 7 machine types, with best performance on fan machines and lowest on valve. Mean source/target AUCs are 0.513/0.495 (AE) and 0.509/0.463 (MAE).
+ - Using frame-based faithfulness (fidelity) and averaging the faithfulness scores at the highest threshold percentiles (98th–99th), MAE achieves slightly higher faithfulness than AE (0.039 vs. 0.038), which indicates MAE provides more reliable explanations than AE even before model optimization.
 
 ### Autoencoder (AE)
 
@@ -50,4 +46,11 @@ The localized annotated anomaly data is available [here](https://docs.google.com
 |-------|-----------|--------------|------|-------------|----------|-----------|
 | AE    | **0.038**     | 0.036        | 0.027| 0.036       | 0.020    | 0.027     |
 | MAE   | **0.039**     | 0.029        | 0.024| 0.030       | 0.017    | 0.024     |
+
+# Usage:
+
+ - Install dependencies listed in `requirements.txt`.
+ - The notebooks `train-models.ipynb` and `evaluate-models.ipynb` contain the script to train and evaluate different anomaly detection models. The convolutional autoencoder with skip connections and transformer achieves the best baseline performance.
+ - In `maskedAE.ipynb`, the best transformer autoencoder model is retrained with masked input regions (MAE training) and compared against the baseline autoencoder using both faithfulness and F-score metrics.
+ - `dcase2022.ipynb` contains preliminary experiments on the DCASE dataset, to evaluate the transferability of the interpretability framework.
 
