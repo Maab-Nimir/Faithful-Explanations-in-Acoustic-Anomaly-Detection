@@ -13,3 +13,4 @@ The localized annotated anomaly data is available [here](https://docs.google.com
  - Install dependencies listed in `requirements.txt`.
  - The notebooks `train-models.ipynb` and `evaluate-models.ipynb` contain the script to train and evaluate different anomaly detection models. The convolutional autoencoder with skip connections and transformer achieves the best baseline performance.
  - In `maskedAE.ipynb`, the best transformer autoencoder model is retrained with masked input regions (MAE training) and compared against the baseline autoencoder using both faithfulness and F-score metrics.
+ - Note: The experiments in `dcase.ipynb` are preliminary and focus on testing the interpretability framework on the DCASE dataset. Detection performance is not optimized and may be improved with hyperparameter tuning and additional training data.

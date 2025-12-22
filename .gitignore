@@ -5,3 +5,4 @@ logs/
 trainer/checkpoints/
 trainer/*.pdf
 trainer/*.joblib
+trainer/.ipynb_checkpoints/
