@@ -48,6 +48,6 @@ The localized annotated anomaly data is available [here](https://docs.google.com
 
 | Model | Error map | Saliency map | IG   | Smooth Grad | Grad CAM | Grad SHAP |
 |-------|-----------|--------------|------|-------------|----------|-----------|
-| AE    | 0.038     | 0.036        | 0.027| 0.036       | 0.020    | 0.027     |
-| MAE   | 0.039     | 0.029        | 0.024| 0.030       | 0.017    | 0.024     |
+| AE    | **0.038**     | 0.036        | 0.027| 0.036       | 0.020    | 0.027     |
+| MAE   | **0.039**     | 0.029        | 0.024| 0.030       | 0.017    | 0.024     |
 
